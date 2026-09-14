@@ -1,0 +1,26 @@
+from math import sqrt, pi
+
+S = float(input('Введіть площу кола: '))
+r = sqrt(S / pi)
+
+print('Радіус дорівнює %6.3f см' % r)
+
+
+r = float(input('\nВведіть радіус кулі: '))
+
+S_sphere = 4 * pi * r**2
+V_sphere = (4 / 3) * pi * r**3
+
+print('Площа поверхні сфери: %6.3f см²' % S_sphere)
+print('Обʼєм кулі: %6.3f см³' % V_sphere)
+
+
+celsius = float(input('\nВведіть температуру в градусах Цельсіях: '))
+fahrenheit = celsius * 9 / 5 + 32
+
+print('Температура за Фаренгейтом: %6.1f °F' % fahrenheit)
+
+fahrenheit = float(input('Введіть температуру в градусах Фаренгейта: '))
+celsius = (fahrenheit - 32) * 5 / 9
+
+print('Температура за Цельсієм: %6.1f °C' % celsius)
